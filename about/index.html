@@ -28,11 +28,11 @@
         // Some raw data (not necessarily accurate)
         var data = google.visualization.arrayToDataTable([
           ["Month", "Dec", "Inf", "Act", "Rec"],
-          ["June 1", 165, 938, 0, 998],
-          ["June 2", 135, 1120, 599, 1268],
-          ["June 3", 157, 1167, 587, 807],
-          ["June 4", 139, 1110, 615, 968],
-          ["June 5", 136, 691, 629, 1026],
+          ["May 24", 0, 2, 2, 0],
+          ["May 25", 0, 9, 9, 0],
+          ["May 26", 0, 11, 11, 0],
+          ["May 27", 0, 19, 18, 1],
+          ["May 28", 0, 19, 18, 1],
         ]);
 
         var options = {
@@ -315,41 +315,6 @@
         background-color: #1d7ece;
         color: white;
       }
-      @keyframes anim {
-        0% {
-          background-position: 0%;
-        }
-        20% {
-          background-position: 20%;
-        }
-        40% {
-          background-position: 40%;
-        }
-        60% {
-          background-position: 60%;
-        }
-        80% {
-          background-position: 80%;
-        }
-        110% {
-          background-position: 0%;
-        }
-      }
-      .cbtn {
-        padding: 15px;
-        background: linear-gradient(to right, #9cecfb, #65c7f7, #4a87e8);
-        background-size: 400% 400%;
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-        animation: anim 4s linear infinite;
-        transition: all 0.3s ease;
-      }
-      .cbtn2 {
-        padding: 15px;
-        background: linear-gradient(to right, #e88385, #e1eec3);
-        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-        animation: anim 4s linear infinite;
-        background-size: 400%;
-      }
       @media screen and (max-width: 640px) {
         table tr:nth-child(odd) {
           background-color: gainsboro;
@@ -442,11 +407,11 @@
       function drawChart() {
         var data = google.visualization.arrayToDataTable([
           ["Month", "Dec", "Inf", "Act", "Rec"],
-          ["June 1", 165, 938, 0, 998],
-          ["June 2", 135, 1120, 599, 1268],
-          ["June 3", 157, 1167, 587, 807],
-          ["June 4", 139, 1110, 615, 968],
-          ["June 5", 136, 691, 629, 1026],
+          ["May 24", 0, 2, 2, 0],
+          ["May 25", 0, 9, 9, 0],
+          ["May 26", 0, 11, 11, 0],
+          ["May 27", 0, 19, 18, 1],
+          ["May 28", 0, 19, 18, 1],
         ]);
 
         var options = {
@@ -543,7 +508,7 @@
 
       <center>
         <div style="width: 50%;">
-          <div class="cbtn2">
+          <div style="background-color: white; padding: 15px;">
             Debtanu Dey
           </div>
         </div>
@@ -560,7 +525,7 @@
         </div>
         <br /><br />
         <div style="width: 50%;">
-          <div class="cbtn">
+          <div style="background-color: white; padding: 15px;">
             Deep Nandi
           </div>
         </div>
