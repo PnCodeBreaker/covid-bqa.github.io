@@ -336,11 +336,12 @@
         }
       }
       .cbtn {
-        background-color: white;
         padding: 15px;
+        background: linear-gradient(to right, #9cecfb, #65c7f7, #4a87e8);
         background-size: 400% 400%;
         box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-        background: linear-gradient(to right, #faffd1, #a1ffce);
+        animation: anim 4s linear infinite;
+        transition: all 0.3s ease;
       }
       @media screen and (max-width: 640px) {
         table tr:nth-child(odd) {
