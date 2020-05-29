@@ -25,7 +25,7 @@
     <style>
       @font-face {
         font-family: google;
-        src: url("../../fonts/google_sans/GoogleSans-Regular.ttf");
+        src: url("../fonts/google_sans/GoogleSans-Regular.ttf");
       }
       body {
         -webkit-tap-highlight-color: rgba(255, 255, 255, 0);
@@ -121,6 +121,7 @@
       }
 
       .card {
+        backdrop-filter: saturate(180%) blur(10px);
         /*            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);*/
         transition: 0.3s;
 
@@ -131,6 +132,8 @@
         padding: 25px;
         color: black;
         font-size: 20px;
+        opacity: 0.7;
+        border-radius: 5px;
 
         box-shadow: 0 2.8px 2.2px rgba(0, 0, 0, 0.034),
           0 6.7px 5.3px rgba(0, 0, 0, 0.048), 0 12.5px 10px rgba(0, 0, 0, 0.06),
@@ -282,6 +285,49 @@
         background-color: #1d7ece;
         color: white;
       }
+      @keyframes anim {
+        0% {
+          background-position: 0%;
+        }
+        20% {
+          background-position: 20%;
+        }
+        40% {
+          background-position: 40%;
+        }
+        60% {
+          background-position: 60%;
+        }
+        80% {
+          background-position: 80%;
+        }
+        110% {
+          background-position: 0%;
+        }
+      }
+      .cbtn {
+        padding: 15px;
+        background: linear-gradient(to right, #9cecfb, #65c7f7, #4a87e8);
+        background-size: 400% 400%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        animation: anim 4s linear infinite;
+        transition: all 0.3s ease;
+      }
+      .cbtn2 {
+        padding: 15px;
+        background: linear-gradient(to right, #e88385, #e1eec3);
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        animation: anim 4s linear infinite;
+        background-size: 400%;
+      }
+      .cbtn3 {
+        padding: 15px;
+        background-size: 400%;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+        background: linear-gradient(to right, #88c8f3, #a1ffce);
+        animation: anim 4s linear infinite;
+      }
+
       @media screen and (max-width: 640px) {
         table tr:nth-child(odd) {
           background-color: gainsboro;
@@ -317,7 +363,7 @@
           width: 80%;
           height: auto;
           font-family: google;
-
+          font-size: 17px;
           color: black;
         }
         .header {
